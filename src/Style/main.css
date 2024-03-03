@@ -1,11 +1,16 @@
 .nav {
-  background-color: red;
+  display: flex;
+  background-color: transparent;
   position: relative;
 }
 .nav ul {
-  background-color: black;
+  background-color: #59111E;
   display: none;
   list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  right: 0;
 }
 .nav ul li {
   width: 100%;
@@ -13,46 +18,70 @@
 }
 .nav ul li a {
   text-decoration: none;
+  text-align: center;
 }
 .nav .bar a {
-  color: white;
-  padding: 14px 16px;
+  color: #7a9fbf;
+  padding: 20px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2em;
   display: block;
 }
 .nav a:hover {
-  background-color: #ddd;
+  background-color: rgba(166, 28, 40, 0.85);
   color: black;
 }
 .nav a:focus {
-  background-color: #ddd;
+  background-color: rgba(166, 28, 40, 0.85);
   color: black;
 }
 
 .icon {
-  display: block;
+  color: #7a9fbf;
+  display: flex;
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 80px;
-  width: 80px;
+  right: 0px;
+  top: 0px;
+  height: 150px;
+  width: 150px;
+  font-size: 3em;
+  text-align: center;
 }
 
 .fa {
   position: absolute;
-  right: 40%;
-  top: 40%;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
+  right: 55px;
+  top: 55px;
 }
 
 .logo {
   background-image: url(../assets/logo.png);
   background-size: cover;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
+}
+
+.header {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "acier-bat-gris", sans-serif;
+}
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-section {
+  background-color: #7a9fbf;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
 }/*# sourceMappingURL=main.css.map */

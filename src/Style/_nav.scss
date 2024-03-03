@@ -1,0 +1,73 @@
+@import "_variables.scss";
+.nav{
+    display: flex;
+    
+    background-color: transparent;
+    position: relative;
+     ul {
+        background-color: $red-dark;
+        display: none;
+        list-style: none;
+        width: 100%;
+        
+        position: absolute;
+        top: 150px;
+        right: 0;
+        li{
+            width: 100%;
+            text-decoration: none;
+            
+            a{
+               text-decoration: none;
+               text-align: center;
+               
+            }
+        }
+   
+     }
+     .bar{ 
+      a{
+        color: $blue-light;
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 2em;
+        display: block;
+      }  
+        
+     }
+     a:hover {
+      background-color: transparentize($color: $red-light, $amount: 0.15) ;
+      color: black;
+      
+     }
+     a:focus{
+      background-color: transparentize($color: $red-light, $amount: 0.15);
+      color: black;
+     }
+     
+}
+.icon{
+        color: $blue-light;
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 150px;
+        width: 150px;
+        font-size: 3em;
+        text-align: center;
+     }
+.fa{
+   position: absolute;
+   right: 55px;
+   top: 55px;
+}
+
+
+.logo{
+   background-image: url(../assets/logo.png);
+   background-size:   cover;
+   width: 150px;
+   height: 150px;
+
+}

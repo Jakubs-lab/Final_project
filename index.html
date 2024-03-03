@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/Style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vlz2msj.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vejborný Truhlář</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav">
         <div class="logo"></div>
         <ul class="nav-menu">
           <li class="bar1 bar active"><a href="#">Úvod</a></li>
-          <li class="bar2 bar"><a href="#">O nás</a></li>
-          <li class="bar3 bar"><a href="#">Objednávka na zakázku</a></li>
+          <li class="bar2 bar"><a href="#O_nas">O nás</a></li>
+          <li class="bar3 bar"><a href="./order.html">Objednávka na zakázku</a></li>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
     </header>
+    <main class="aboutus" id="O_nas">
+        <section class="aboutus-section">
+          <h2>O nás</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, obcaecati? Optio quibusdam blanditiis commodi minima saepe, assumenda earum laboriosam modi nostrum est corporis repudiandae dolore corrupti quo facere ab quas?</p>
+        </section>
+    </main>
     <script>
       function myFunction() {
         var x = document.querySelector(".nav-menu");
@@ -31,6 +38,6 @@
         }
       }
       </script>
-    <script type="module" src="/src/main.jsx"></script>
+    
   </body>
 </html>

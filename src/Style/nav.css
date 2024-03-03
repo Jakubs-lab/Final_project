@@ -1,11 +1,17 @@
 .nav {
-  background-color: red;
+  display: flex;
+  background-color: transparent;
   position: relative;
 }
 .nav ul {
-  background-color: black;
+  background-color: #59111E;
   display: none;
   list-style: none;
+  width: 50%;
+  border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  right: 0;
 }
 .nav ul li {
   width: 100%;
@@ -22,21 +28,23 @@
   display: block;
 }
 .nav a:hover {
-  background-color: #ddd;
+  background-color: #A61C28;
   color: black;
 }
 .nav a:focus {
-  background-color: #ddd;
+  background-color: #A61C28;
   color: black;
 }
 
 .icon {
+  color: #7a9fbf;
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 80px;
-  width: 80px;
+  right: 0px;
+  top: 0px;
+  height: 150px;
+  width: 150px;
+  font-size: 3em;
 }
 
 .fa {
@@ -45,14 +53,9 @@
   top: 40%;
 }
 
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 .logo {
   background-image: url(../assets/logo.png);
   background-size: cover;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
 }/*# sourceMappingURL=nav.css.map */
