@@ -7,3 +7,20 @@
     width: 80dvw;
     
 }
+@media (min-width:850px) {
+  .config{
+    margin-top:5em;
+  }  
+    
+}
+.configurator{
+  position: fixed;
+  right: 24px;
+  width: 30%;
+  bottom: 15vh;
+  color: $red-dark;
+  background-color: $blue-light;
+  margin-right: 1em;
+  padding: 16px;
+  
+}

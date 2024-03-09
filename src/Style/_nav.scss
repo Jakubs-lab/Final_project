@@ -1,7 +1,6 @@
 @import "_variables.scss";
 .nav{
     display: flex;
-    
     background-color: transparent;
     position: relative;
      ul {
@@ -9,12 +8,11 @@
         display: none;
         list-style: none;
         width: 100%;
-        
         position: absolute;
         top: 150px;
         right: 0;
         li{
-            width: 100%;
+            
             text-decoration: none;
             
             a{
@@ -26,12 +24,15 @@
    
      }
      .bar{ 
+      
       a{
         color: $blue-light;
         padding: 20px 16px;
         text-decoration: none;
         font-size: 2em;
         display: block;
+        
+      
       }  
         
      }
@@ -66,8 +67,38 @@
 
 .logo{
    background-image: url(../assets/logo.png);
-   background-size:   cover;
+   background-size:   cover ;
    width: 150px;
-   height: 150px;
+   height:150px;
+   
+   
 
 }
+@media (min-width:850px) {
+   
+   .nav{
+         justify-content: center;
+         
+         .logo{
+              min-width: 150px;
+            }
+      ul{
+         align-content: center;
+         display: flex;
+         position:relative;
+         top:0;
+         left: 0;
+         display: flex;
+         justify-content: flex-end;
+         height: 10%;
+      li{
+         
+      }
+            
+   }
+   .icon{
+      display: none;
+      
+   }
+   
+}}
