@@ -5,20 +5,21 @@
     <link rel="stylesheet" href="./src/Style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/vlz2msj.css">
+    <script src="https://kit.fontawesome.com/62a8be677a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vejborný Truhlář</title>
   </head>
   <body class="body">
     <header class="header">
       <nav class="nav">
-        <div class="logo"></div>
+        <a href="./index.html"><div class="logo" ></div></a>
         <ul class="nav-menu">
           <li class="bar1 bar active"><a href="#">Úvod</a></li>
           <li class="bar2 bar"><a href="#O_nas">O nás</a></li>
           <li class="bar3 bar"><a href="./order.html">Objednávka na zakázku</a></li>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <i class="fa  fa-bars"></i>
         </a>
       </nav>
     </header>
@@ -28,15 +29,45 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, obcaecati? Optio quibusdam blanditiis commodi minima saepe, assumenda earum laboriosam modi nostrum est corporis repudiandae dolore corrupti quo facere ab quas?</p>
         </section>
     </main>
+    <footer class="footer">
+      <section class="section_contact">
+        <H2>Kontakt</H2>
+        <strong><i class="fa-solid fa-mobile"></i>606852333</strong>
+        <a href="info@vejborny-truhlar.cz"><i class="fa-solid fa-envelope"></i>info@vejborny-truhlar.cz</a>
+      
+      </section>
+      <form class="footer_form">
+     
+        <h2>Poptávkový formulář</h2>
+         <div class="form_inputs">
+        <label class="footer_form_label_name" >Jméno  
+          <input placeholder="Kamil" type="name">
+        </label>
+        <label class="footer_form_label_name">Příjmení
+          <input placeholder="Vejborný" type="text">
+        </label>
+        <label for="" class="footer_form_label_name">Email
+            <input placeholder="vejborny@seznam.cz" type="email" >
+        </label>
+      </div>
+        <label class="footer_form_label_name " >Vaše poptávka
+          <textarea class="text_field" cols="30" rows="10"></textarea>
+        </label>
+        <button class="button" type="submit">Odeslat</button>
+      </form>
+      
+    </footer>
     <script>
-      function myFunction() {
-        var x = document.querySelector(".nav-menu");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+      document.addEventListener("DOMContentLoaded", function() {
+      {
+        const nav = document.querySelector(".nav-menu")
+        const bars = document.querySelector(".icon")
+        bars.addEventListener("click",function  () {
+          nav.classList.toggle("active")
+        })}
+});
+      
+
       </script>
     
   </body>

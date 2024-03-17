@@ -1,35 +1,46 @@
 @import "_variables.scss";
+@import "_fonts.scss";
 .nav{
-    display: flex;
-    background-color: transparent;
+    
+   
     position: relative;
-     ul {
-        background-color: $red-dark;
-        display: none;
+     .nav-menu {
+        background-color: $blue-light;
         list-style: none;
-        width: 100%;
+        width: 300px;
+        border-radius:0 20px 20px 0;
+        transform: translateX(-400px); /* the element is transposed 300px to the left of where it's supposed to be */
+        transition: transform 1s ease-out, visibility 1s ;
+        transition:  1s ease ;
+        visibility: hidden;
+        z-index: 1 ;
         position: absolute;
-        top: 150px;
-        right: 0;
+        
         li{
             
             text-decoration: none;
             
             a{
                text-decoration: none;
-               text-align: center;
+               font-family: $font-second;
                
             }
         }
    
      }
+     .nav-menu.active {
+      transform: translateX(-40px); /* the element is returned to where it's supposed to be */
+      transition: transform 1s ease-out, visibility 0s;
+      visibility: visible;
+
+    }
      .bar{ 
       
       a{
-        color: $blue-light;
-        padding: 20px 16px;
+        color: black;
+        padding:  16px;
         text-decoration: none;
-        font-size: 2em;
+        font-size: 1.5em;
         display: block;
         
       
@@ -77,24 +88,29 @@
 @media (min-width:850px) {
    
    .nav{
-         justify-content: center;
+         display: flex;
+         justify-content: flex-end;
+         
+         
+         
+      
+         
          
          .logo{
               min-width: 150px;
             }
-      ul{
-         align-content: center;
-         display: flex;
-         position:relative;
-         top:0;
-         left: 0;
+      .nav-menu{
          display: flex;
          justify-content: flex-end;
+         visibility: visible;
+         position:relative;
          height: 10%;
-      li{
+         transform: translateX(0);
+         width: 100%;
+         border-radius: 0%;
          
-      }
-            
+         
+         
    }
    .icon{
       display: none;

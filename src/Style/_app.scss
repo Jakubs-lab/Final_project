@@ -1,26 +1,108 @@
 .config{
     margin: 0 auto ;
-    border: 1px solid rgb(0, 0, 0);
-    margin-top:15em;
-    height: 30em;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2rem;
     touch-action: none;
-    width: 80dvw;
+    height: 80vw;
+      
+  
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
     
 }
 @media (min-width:850px) {
   .config{
-    margin-top:5em;
-  }  
+    display: flex; 
+    height: 70vh;
+    width: 50vw;
+      canvas{
+        border-radius: 30px 0   0 30px    ;
+      }
+    .configurator{
+      border-radius:  0 30px  30px  0    ;
+    }
+
+   
     
+  }  
+  
 }
 .configurator{
-  position: fixed;
   right: 24px;
-  width: 30%;
   bottom: 15vh;
-  color: $red-dark;
-  background-color: $blue-light;
-  margin-right: 1em;
+  color: $blue-light;
   padding: 16px;
+  font-size: 1rem;
+  background-color: black ;
+}
+.configurator_section_title{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+.configurator_section_values{
+  display:flex ;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+  gap:1em;
+  margin-top: 1em;
+}
+.item_label{
+  font-size: 1em;
+  color: $red-dark;
+  transition: .4s color;
+  
+  ;
+}
+.item{
+  transition: .4s opacity;
+}
+.item:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.item.item--active .item_label{
+  color:white;
+  border: 1px white solid;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.width{
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  color: black;
+  outline: none;
+  opacity:0.7;
+  transition: opacity .2s;
+  cursor: pointer;
+  
+
+}
+.width::-webkit-slider-thumb{
+  appearance: none;
+  background: url(../assets/hammer-solid.svg);
+  width: 23px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.width:hover{
+  opacity: 1;
+}
+.slidecontainer{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
 }

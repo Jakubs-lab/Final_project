@@ -1,22 +1,30 @@
 import { createRoot } from 'react-dom/client'
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import Experience from './components/Experience'
 import Configurator from './components/Configurator'
+import { CustomizationProvider } from './context/Customization'
+import { PerspectiveCamera } from '@react-three/drei'
+
+
 
 const Configuration = () => {
  
-  return <div className='config'>
-    <Canvas>
+  return ( 
+    <CustomizationProvider>
+  <div className='config'>
+    <Canvas  >
       <color attach={"background"} args={["#7a9fbf"]}/>
       <fog attach="fog" args={["#7a9fbf", 5, 20]} />
+      <PerspectiveCamera zoom={[0.5]} position={[0,0,5]} makeDefault/>
         <Experience/>
-    </Canvas>
+    </Canvas >
+    
     <Configurator/>
   </div>
-
+</CustomizationProvider>
   
-  
+  )
 }
 const container = document.querySelector(".app")
 const root = createRoot(container)
