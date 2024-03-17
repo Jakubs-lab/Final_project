@@ -2,9 +2,9 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { Canvas, useFrame } from '@react-three/fiber'
-import Experience from './src/components/Experience'
-import Configurator from './src/components/Configurator'
-import { CustomizationProvider } from './src/context/Customization'
+import Experience from './components/Experience'
+import Configurator from './components/Configurator'
+import { CustomizationProvider } from './context/Customization'
 import { PerspectiveCamera } from '@react-three/drei'
 
 
