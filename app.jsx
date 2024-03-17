@@ -1,5 +1,6 @@
-import { createRoot } from 'react-dom/client'
+
 import React from 'react'
+import { createRoot } from 'react-dom/client'
 import { Canvas, useFrame } from '@react-three/fiber'
 import Experience from './src/components/Experience'
 import Configurator from './src/components/Configurator'
