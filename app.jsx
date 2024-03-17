@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
 import React from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import Experience from './components/Experience'
-import Configurator from './components/Configurator'
-import { CustomizationProvider } from './context/Customization'
+import Experience from './src/components/Experience'
+import Configurator from './src/components/Configurator'
+import { CustomizationProvider } from './src/context/Customization'
 import { PerspectiveCamera } from '@react-three/drei'
 
 
