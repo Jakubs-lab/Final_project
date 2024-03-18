@@ -4,11 +4,14 @@ import { useGLTF, useTexture } from '@react-three/drei';
 import React from 'react';
 import { useCustomization } from '../context/Customization';
 import tableModel from '../assets/Models/Table_type_01.gltf';
+import pineTextureBaseColor from '../Textures/Pine_wood/Wood_Plywood_Front_001_basecolor.jpg'
+import pineTexturNormalMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_normal.jpg'
+import pineTextureRoughnessMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_roughness.jpg'
 import pineTextureAoMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_ambientOcclusion.jpg'
 import OakTextureBaseColor from '../Textures/Oak_wood/Wood_025_basecolor.jpg'
 import OakTextureNormalMap from '../Textures/Oak_wood/Wood_025_normal.jpg'
 import OakTextureRoughnessMap from '../Textures/Oak_wood/Wood_025_roughness.jpg'
-import OakTextureRoughnessAoMap from '../Textures/Oak_wood/Wood_025_ambientOcclusion.jpg'
+import OakTextureAoMap from '../Textures/Oak_wood/Wood_025_ambientOcclusion.jpg'
 
 
 
@@ -27,12 +30,12 @@ const dub = useTexture({
   map: OakTextureBaseColor,
   normalMap: OakTextureNormalMap,
   roughnessMap: OakTextureRoughnessMap ,
-  aoMap: OakTextureRoughnessAoMap,
+  aoMap: OakTextureAoMap,
 })
 const borovice = useTexture({
-  map: './src/Textures/Pine_wood/Wood_Plywood_Front_001_basecolor.jpg',
-  normalMap: './src/Textures/Pine_wood/Wood_Plywood_Front_001_normal.jpg',
-  roughnessMap: 'src/Textures/Pine_wood/Wood_Plywood_Front_001_roughness.jpg',
+  map: pineTextureBaseColor,
+  normalMap: pineTexturNormalMap,
+  roughnessMap:pineTextureRoughnessMap,
   aoMap: pineTextureAoMap,
 })
 
