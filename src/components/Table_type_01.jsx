@@ -1,13 +1,15 @@
 
 
-import React from 'react'
-import {  useGLTF, useTexture } from '@react-three/drei'
-import { useCustomization } from '../context/Customization'
+import { useGLTF, useTexture } from '@react-three/drei';
+import React from 'react';
+import { useCustomization } from '../context/Customization';
+
+
 
 
 
 const Table_type_01 = (props) => {
-  const { nodes, materials } = useGLTF('src/Models/Table_type_01.gltf')
+  const { nodes, materials } = useGLTF('src/assets/Table_type_01.gltf')
  
   const {material ,tableWidth,tableDepth,tableHeight,} = useCustomization()
   
