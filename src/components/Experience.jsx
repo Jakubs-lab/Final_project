@@ -2,7 +2,7 @@
 import { MeshReflectorMaterial,PresentationControls,Stage} from '@react-three/drei';
 import React from 'react';
 import Table_type_01 from './Table_type_01';
-import Table_type_02 from './Table_type_02';
+//import Table_type_02 from './Table_type_02';
 
 
 
