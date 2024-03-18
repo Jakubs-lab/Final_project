@@ -4,6 +4,8 @@ import { useGLTF, useTexture } from '@react-three/drei';
 import React from 'react';
 import { useCustomization } from '../context/Customization';
 import tableModel from '../assets/Models/Table_type_01.gltf';
+import pineTextureAoMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_ambientOcclusion.jpg'
+import OakTextureBaseColor from '../Textures/Oak_wood/Wood_025_basecolor.jpg'
 
 
 
@@ -19,7 +21,7 @@ const Table_type_01 = (props) => {
   const tableHeightScale = tableHeight /100
 
 const dub = useTexture({
-  map: './src/Textures/Oak_wood/Wood_025_basecolor.jpg',
+  map: OakTextureBaseColor,
   normalMap: './src/Textures/Oak_wood/Wood_025_normal.jpg',
   roughnessMap: 'src/Textures/Oak_wood/Wood_025_roughness.jpg',
   aoMap: './src/Textures/Oak_wood/Wood_025_ambientOcclusion.jpg',
@@ -28,7 +30,7 @@ const borovice = useTexture({
   map: './src/Textures/Pine_wood/Wood_Plywood_Front_001_basecolor.jpg',
   normalMap: './src/Textures/Pine_wood/Wood_Plywood_Front_001_normal.jpg',
   roughnessMap: 'src/Textures/Pine_wood/Wood_Plywood_Front_001_roughness.jpg',
-  aoMap: './src/Textures/Pine_wood/Wood_Plywood_Front_001_ambientOcclusion.jpg',
+  aoMap: pineTextureAoMap,
 })
 
 
