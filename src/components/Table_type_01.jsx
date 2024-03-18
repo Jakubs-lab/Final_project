@@ -84,6 +84,6 @@ const borovice = useTexture({
   )
 }
 
-useGLTF.preload('src/Models/Table_type_01.gltf')
+useGLTF.preload(tableModel)
 
 export default Table_type_01
