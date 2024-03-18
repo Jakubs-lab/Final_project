@@ -7,7 +7,7 @@ import { useCustomization } from '../context/Customization'
 
 
 const Table_type_01 = (props) => {
-  const { nodes, materials } = useGLTF('./src/assets/Models/Table_type_01.gltf')
+  const { nodes, materials } = useGLTF('src/Models/Table_type_01.gltf')
  
   const {material ,tableWidth,tableDepth,tableHeight,} = useCustomization()
   
