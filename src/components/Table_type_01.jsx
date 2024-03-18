@@ -6,6 +6,9 @@ import { useCustomization } from '../context/Customization';
 import tableModel from '../assets/Models/Table_type_01.gltf';
 import pineTextureAoMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_ambientOcclusion.jpg'
 import OakTextureBaseColor from '../Textures/Oak_wood/Wood_025_basecolor.jpg'
+import OakTextureNormalMap from '../Textures/Oak_wood/Wood_025_normal.jpg'
+import OakTextureRoughnessMap from '../Textures/Oak_wood/Wood_025_roughness.jpg'
+import OakTextureRoughnessAoMap from '../Textures/Oak_wood/Wood_025_ambientOcclusion.jpg'
 
 
 
@@ -22,9 +25,9 @@ const Table_type_01 = (props) => {
 
 const dub = useTexture({
   map: OakTextureBaseColor,
-  normalMap: './src/Textures/Oak_wood/Wood_025_normal.jpg',
-  roughnessMap: 'src/Textures/Oak_wood/Wood_025_roughness.jpg',
-  aoMap: './src/Textures/Oak_wood/Wood_025_ambientOcclusion.jpg',
+  normalMap: OakTextureNormalMap,
+  roughnessMap: OakTextureRoughnessMap ,
+  aoMap: OakTextureRoughnessAoMap,
 })
 const borovice = useTexture({
   map: './src/Textures/Pine_wood/Wood_Plywood_Front_001_basecolor.jpg',
