@@ -106,3 +106,15 @@
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
 }
+.configurator_form{
+
+      .configurator_input{
+        display: flex;
+
+      }
+      .configurator_button_submit{
+        margin: 1em 0 0 0 ;
+        width: 10rem;
+        height: 2rem;
+      }
+}
