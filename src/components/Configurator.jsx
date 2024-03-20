@@ -64,14 +64,14 @@ import React from "react";
                 
                 </div>
                 <form className="configurator_form" onSubmit={onSubmit}>
-                    
+                    <h2>Objednávka stolu</h2>
                 <input type="hidden" name="access_key" value="858c1ee4-e959-4d07-bea9-658d85a70312"></input>
                     
 
                     
                     <input type="hidden" name="subject" value="Nová objednávka"/>
                     <label  className="configurator_input_label" >Jméno 
-                        <input className="configurator_input" type="text" name="name"  />
+                        <input className="configurator_input" type="text" name="name" required  />
                     </label>
 
                     <label className="configurator_input_label" >Příjmení
@@ -85,10 +85,10 @@ import React from "react";
                     <label className="configurator_input_label" >Telefoní číslo
                         <input className="configurator_input" type="phone" name="phone_number" />
                     </label>
-                    <textarea name="message" required value={`Šířka stolu : ${tableWidth}cm Hloubka stolu : ${tableDepth}cm Výška stolu : ${tableHeight}cm Druh dřeva : ${material}`}>
-
+                    <textarea readOnly  className="configurator_textarea" name="message"  value={`Šířka stolu : ${tableWidth}cm Hloubka stolu : ${tableDepth}cm Výška stolu : ${tableHeight}cm Druh dřeva : ${material}`}>
+                        
                     </textarea>
-                    <button type="submit" className="configurator_button_submit">Poslat požadavek</button>
+                    <button  type="submit" className="configurator_button_submit">Poslat požadavek</button>
                 </form>
                 <span>{result}</span>
 
