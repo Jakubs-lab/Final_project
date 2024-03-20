@@ -136,7 +136,6 @@
   -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
    supported by Chrome, Edge, Opera and Firefox */
-  touch-action: cross-slide-y;
 }
 
 .config {
@@ -145,6 +144,9 @@
   margin: 0 auto;
   margin-top: 2rem;
   height: 50dvh;
+}
+.config canvas {
+  touch-action: none;
 }
 
 .configurator {
