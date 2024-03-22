@@ -23,7 +23,9 @@ const Configuration = () => {
         <Experience />
     </Canvas >
     
-    <Configurator/>
+    <Configurator
+    
+    />
   </div>
 </CustomizationProvider>
   

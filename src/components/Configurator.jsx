@@ -91,7 +91,7 @@ import { normalize } from "three/src/math/MathUtils";
 
                             <h2>Údaje pro objednávku</h2>
                             
-                                    
+                                                                                            
                                     <label  className="configurator_input_label" >Jméno 
                                         <input className="configurator_input" type="text" name="name" required  />
                                     </label>

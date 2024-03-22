@@ -59,12 +59,16 @@ textarea:focus{
     }
     strong{
         
-        justify-content: center;
+        
         gap: 0.5em;
          i{
             display: block;
             margin-bottom: 1em;
          }
+    }
+    a{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (min-width:850px) {
