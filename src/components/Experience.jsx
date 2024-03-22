@@ -14,7 +14,7 @@ const Experience = () =>{
     <PresentationControls
         speed={0.5}
         polar={[-0.5, Math.PI / 4]}
-        rotation={[Math.PI / 8, Math.PI / 9, 0]}
+        rotation={[Math.PI / 5, Math.PI / 9, 0]}
         >
     <Stage shadows>
         <Table_type_01/>
