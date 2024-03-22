@@ -113,7 +113,7 @@
 
 .body-order {
   margin: 0 auto;
-  padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   background-color: #59111E;
 }
@@ -152,10 +152,12 @@
 .configurator {
   right: 24px;
   bottom: 15vh;
-  color: #7a9fbf;
+  color: white;
   padding: 16px;
   font-size: 1rem;
   background-color: black;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .configurator_section_title {
@@ -170,21 +172,6 @@
   align-items: center;
   gap: 1em;
   margin-top: 1em;
-}
-
-.item_label {
-  font-size: 1em;
-  color: #59111E;
-  transition: 0.4s color;
-}
-
-.item {
-  transition: 0.4s opacity;
-}
-
-.item:hover {
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 .item.item--active .item_label {
@@ -240,9 +227,20 @@
   color: white;
   touch-action: none;
   height: 100px;
-  margin: 1em 0 0 0;
+  margin: 1em 0 2em 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   box-sizing: border-box;
+}
+
+.texture {
+  margin: 1em 1em 1em 0;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: black;
+  color: white;
 }
 
 @media (min-width: 850px) {

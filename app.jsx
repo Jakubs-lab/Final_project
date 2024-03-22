@@ -14,11 +14,13 @@ const Configuration = () => {
   return ( 
     <CustomizationProvider>
   <div className='config'>
-    <Canvas  >
+    <Canvas shadows >
+    <directionalLight castShadow position={[1,3,4]}  />
+    
       <color attach={"background"} args={["#7a9fbf"]}/>
       <fog attach="fog" args={["#7a9fbf", 5, 20]} />
       <PerspectiveCamera zoom={[0.5]} position={[0,0,5]} makeDefault/>
-        <Experience/>
+        <Experience />
     </Canvas >
     
     <Configurator/>
