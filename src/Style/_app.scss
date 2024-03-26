@@ -52,7 +52,7 @@
 .width{
   appearance: none;
   width: 100%;
-  height: 25px;
+  height: 2.5rem;
   color: black;
   outline: none;
   opacity:0.7;
@@ -64,9 +64,10 @@
 .width::-webkit-slider-thumb{
   appearance: none;
   background: url(../assets/hammer-solid.svg);
-  width: 23px;
-  height: 20px;
-  border: 0;
+  margin-top:5px ;
+  width: 45px;
+  height: 45px;
+  
   cursor: pointer;
 }
 
@@ -85,15 +86,21 @@
       .configurator_input{
         font-size: 1.5rem;
         display: flex;
-        height: 3rem;
+        height: 2.5rem;
         width:100% ;
-        background-color:$grey ;
+        background-color:white ;
+        opacity: 0.7;
+        transition: opacity .2s;
+        cursor: pointer;
         color: white;
-        margin: 0.5em 0 0.5em 0;
-        
+        margin: 0 0 0.5em 0;
+          
       }
+      .configurator_input:hover{
+            opacity: 1;
+          }
       .configurator_input::placeholder{
-        color: lighten($color: $grey, $amount: 19);
+        color: lighten($color: black, $amount: 50);
       }
       
       .configurator_textarea{
@@ -122,17 +129,23 @@
       }
 }
 .texture{
-  margin: 0em 0em 1em 0;
+  margin: 0em 0em 0em 0;
+  height: 2.5rem;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   border: 1px solid white;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color:black;
-  color: white;
+  background-color:white;
+  opacity: 0.7;
+  transition: opacity .2s;
   cursor: pointer;
         
 }
+.texture:hover{
+  opacity: 1;
+}
+
 .configurator_section_title_texture{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ;
 }
@@ -207,9 +220,10 @@
     }
     .form_recap{
       margin-top: 2em;
+      font-size: 1.2em;
     }
    .width{
-    height: 2rem;
+    height: 2.5rem;
    }
     
   }  }
