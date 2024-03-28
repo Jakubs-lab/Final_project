@@ -12,7 +12,6 @@ import OakTextureBaseColor from '../Textures/Oak_wood/Wood_025_basecolor.jpg'
 import OakTextureNormalMap from '../Textures/Oak_wood/Wood_025_normal.jpg'
 import OakTextureRoughnessMap from '../Textures/Oak_wood/Wood_025_roughness.jpg'
 import OakTextureAoMap from '../Textures/Oak_wood/Wood_025_ambientOcclusion.jpg'
-import
 
 const Table_type_02 = (props) => {
   const { nodes, materials } = useGLTF(tableModel2)
