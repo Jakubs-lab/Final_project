@@ -425,14 +425,14 @@
   font-size: 2em;
   text-align: center;
   line-height: 5.2em;
-  color: #59111E;
+  color: black;
   font-weight: 600;
 }
 .footer .footer_form .text_field::placeholder {
   font-size: 2em;
   text-align: center;
   line-height: 5.2em;
-  color: #59111E;
+  color: black;
   font-weight: 600;
 }
 .footer input:focus {
