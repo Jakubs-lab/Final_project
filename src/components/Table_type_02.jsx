@@ -3,6 +3,7 @@
 import React, { useRef } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 import { useCustomization } from '../context/Customization'
+import tableModel2 from '../assets/Models/Table'
 import pineTextureBaseColor from '../Textures/Pine_wood/Wood_Plywood_Front_001_basecolor.jpg'
 import pineTexturNormalMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_normal.jpg'
 import pineTextureRoughnessMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_roughness.jpg'
@@ -11,9 +12,10 @@ import OakTextureBaseColor from '../Textures/Oak_wood/Wood_025_basecolor.jpg'
 import OakTextureNormalMap from '../Textures/Oak_wood/Wood_025_normal.jpg'
 import OakTextureRoughnessMap from '../Textures/Oak_wood/Wood_025_roughness.jpg'
 import OakTextureAoMap from '../Textures/Oak_wood/Wood_025_ambientOcclusion.jpg'
+import
 
 const Table_type_02 = (props) => {
-  const { nodes, materials } = useGLTF('./src/Models/Table/Table.gltf')
+  const { nodes, materials } = useGLTF(tableModel2)
   const {material ,tableWidth,tableDepth,tableHeight,} = useCustomization()
 
   const tableWidthScale = (tableWidth  /200) 
