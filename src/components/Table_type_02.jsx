@@ -120,6 +120,6 @@ const Table_type_02 = (props) => {
   )
 }
 
-useGLTF.preload('./src/Models/Table/Table.gltf')
+useGLTF.preload(tableModel2)
 
 export default Table_type_02
