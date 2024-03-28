@@ -77,15 +77,15 @@ const Configurator = () => {
 
                             <div className="slidecontainer">
                                 <output name="message" required>Šířka stolu: {tableWidth} cm</output>
-                                <input name="width" type="range" min="70" max="200" value={tableWidth} onChange={(e) => setTableWidth(e.target.value)} className="width"/>
+                                <input name="width" type="range" min="70" max="200"value={tableWidth} onChange={(e) => setTableWidth(e.target.value)} className="width"/>
                             </div>
                             <div className="slidecontainer">
                                 <output>Hloubka stolu: {tableDepth} cm</output>
-                                <input name="depth" type="range" min="40" max="140" value={tableDepth} onChange={(e) => setTableDepth(e.target.value)} className="width"/>
+                                <input name="depth" type="range" min={"50"} max={"90"}value={tableDepth} onChange={(e) => setTableDepth(e.target.value)} className="width"/>
                             </div>
                             <div className="slidecontainer">
                                 <output>Výška stolu: {tableHeight} cm</output>
-                                <input name="height"  type="range" min="50" max="90" value={tableHeight} onChange={(e) => setTableHeight(e.target.value)} className="width"/>
+                                <input name="height"  type="range" min={"50"} max={"80"}value={tableHeight} onChange={(e) => setTableHeight(e.target.value)} className="width"/>
                             </div>
                             <label className="configurator_section_title_texture">Druh dřeva :
 
@@ -113,14 +113,14 @@ const Configurator = () => {
                                     <label className="configurator_input_label" >
                                         <input placeholder="Telefoní číslo"  className="configurator_input" type="phone" name="phone_number" required />
                                     </label>
-                <div className="form_recap">
-                    <div readOnly  className="configurator_textarea" name="message"  >
-                        <h2>Shrnutí objednávky</h2>
-                        <p name="width">Šířka stolu : {tableWidth}cm</p>
-                        <p>Hloubka stolu : {tableDepth}cm</p>
-                        <p>Výška stolu : {tableHeight}cm</p>
-                        <p>Druh dřeva : {material}</p>
-                    </div>
+                                    <div className="form_recap">
+                                        <div readOnly  className="configurator_textarea" name="message"  >
+                                            <h2>Shrnutí objednávky</h2>
+                                            <p>Šířka stolu : {tableWidth}cm</p>
+                                            <p>Hloubka stolu : {tableDepth}cm</p>
+                                            <p>Výška stolu : {tableHeight}cm</p>
+                                            <p>Druh dřeva : {material}</p>
+                                    </div>
                     
                     <button  type="submit"  className="configurator_button_submit" disabled={formSubmitted}>
                             <div className="box">

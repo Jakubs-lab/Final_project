@@ -1,7 +1,13 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url(../Style/_variables.scss);
 @import url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+}
 .nav {
   position: relative;
 }
@@ -92,6 +98,12 @@
     display: none;
   }
 }
+@media (min-width: 850px) {
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+}
 .header {
   margin: 0 auto;
   font-family: "acier-bat-gris", sans-serif;
@@ -110,6 +122,7 @@
   margin: 0 auto;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #59111E;
 }
 
 .body-order {
@@ -125,21 +138,45 @@
    supported by Chrome, Edge, Opera and Firefox */
 }
 
-.aboutus {
+.main_content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  background-color: #59111E;
+  font-size: 1em;
 }
 
-.aboutus-section {
-  text-align: center;
+.main_content_box {
   background-color: #7a9fbf;
-  border-radius: 10px;
-  margin: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  margin: 2em 1em;
+  padding: 1em 0 0 1em;
+  width: 80%;
+  box-shadow: 14px 14px 26px 4px rgba(0, 0, 0, 0.75);
+}
+.main_content_box h2 {
+  margin: 0 auto;
 }
 
+.tools_section {
+  align-self: center;
+}
+.tools_section ul li {
+  margin: 1em 0 1em 0;
+}
+.tools_section ul ::marker {
+  color: #A61C28;
+  content: "🪚";
+  font-size: 1.5rem;
+}
+
+@media (min-width: 850px) {
+  .main_content {
+    font-size: 1.5em;
+  }
+}
 .config {
   margin: 0 auto;
-  height: 40dvh;
+  height: 60dvh;
 }
 .config canvas {
   touch-action: none;
@@ -306,10 +343,10 @@
   transition: all 0.9s;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 850px) and (orientation: landscape) {
   .config {
     display: flex;
-    height: 70dvh;
+    height: 90vh;
     width: 70vw;
   }
   .config canvas {
@@ -317,7 +354,7 @@
   }
   .config .configurator {
     border-radius: 0 30px 30px 0;
-    height: 70dvh;
+    height: 90vh;
     width: 30em;
     box-sizing: border-box;
   }
@@ -330,50 +367,105 @@
   }
 }
 .footer {
+  border-top: solid 1rem #7a9fbf;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  border: 1px solid;
+  font-size: 0.5rem;
   background-color: #59111E;
   color: #7a9fbf;
+  box-shadow: inset 0px 5px 24px 7px rgba(0, 0, 0, 0.75);
+  height: 95em;
 }
 .footer .footer_form {
-  padding: 10px;
   box-sizing: border-box;
 }
 .footer .footer_form h2 {
   display: block;
   text-align: center;
   text-wrap: nowrap;
+  font-size: 4em;
 }
 .footer .footer_form .footer_form_label_name {
   display: block;
   margin: 1em;
 }
-.footer .footer_form .footer_form_label_name input {
+.footer .footer_form input {
   display: flex;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  width: 80%;
+  height: 3em;
+  background-color: #7a9fbf;
+  box-shadow: inset 0px 6px 26px 4px rgba(0, 0, 0, 0.75);
+  border: none;
+}
+.footer .footer_form input::-moz-placeholder {
+  font-size: 1.7em;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.footer .footer_form input::placeholder {
+  font-size: 1.7em;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.footer .footer_form .text_field {
+  box-shadow: inset 0px 6px 26px 4px rgba(0, 0, 0, 0.75);
+  background-color: #7a9fbf;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  width: 80%;
+  resize: none;
+  display: block;
+  color: black;
+}
+.footer .footer_form .text_field::-moz-placeholder {
+  font-size: 2em;
+  text-align: center;
+  line-height: 5.2em;
+  color: #59111E;
+  font-weight: 600;
+}
+.footer .footer_form .text_field::placeholder {
+  font-size: 2em;
+  text-align: center;
+  line-height: 5.2em;
+  color: #59111E;
+  font-weight: 600;
 }
 .footer input:focus {
-  background-color: #7a9fbf;
+  background-color: white;
 }
-.footer textarea:focus {
-  background-color: #7a9fbf;
-}
-
-.text_field {
-  width: 100%;
-  resize: none;
-  margin: 0 auto;
-  display: block;
+.footer .text_field:focus {
+  background-color: white;
 }
 
 .button {
-  width: 100%;
+  margin: 0 auto;
+  color: #59111E;
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 60%;
   height: 3rem;
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #7a9fbf, #2980b9);
+  border-radius: 9px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #7a9fbf);
+  text-decoration: none;
 }
 
 .section_contact {
   margin: 1em;
   text-align: center;
+  font-size: 3em;
 }
 .section_contact a {
   display: flex;
@@ -398,21 +490,33 @@
 
 @media (min-width: 850px) {
   .footer {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 17rem;
+    height: 85em;
   }
   .footer_form {
-    display: flex;
+    width: 540px;
     align-items: center;
   }
   .footer_form .button {
-    width: 100px;
-    display: block;
+    height: 3em;
+    font-weight: bolder;
+    font-size: 4cap;
+  }
+  .footer_form input {
+    margin-right: 1em;
+    width: 200px;
+    font-size: 2em;
   }
   .text_field {
     display: block;
     resize: none;
+    font-size: 2em;
   }
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 }/*# sourceMappingURL=main.css.map */

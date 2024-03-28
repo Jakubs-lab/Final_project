@@ -23,11 +23,25 @@
         </a>
       </nav>
     </header>
-    <main class="aboutus" id="O_nas">
-        <section class="aboutus-section">
+    <main class="main_content" id="O_nas">
+        <section class="aboutus_section main_content_box">
           <h2>O nás</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, obcaecati? Optio quibusdam blanditiis commodi minima saepe, assumenda earum laboriosam modi nostrum est corporis repudiandae dolore corrupti quo facere ab quas?</p>
+          <p>Vítejte na naší webové stránce rodinného truhlářství, kde se tradice a vášeň spojují s moderním řemeslem. Jsme skupina nadšených řemeslníků a umělců, kteří se specializují na výrobu kvalitních dřevěných výrobků s láskou a pečlivostí.</p>
         </section>
+
+        <section class="tools_section main_content_box">
+          <h2>Naše Práce</h2>
+          <p>
+V naší dílně vytváříme širokou škálu výrobků od tradičního dřevěného nábytku po moderní doplňky interiéru. Každý kus je ručně vyroben s důrazem na detail a kvalitu materiálů. Spolupracujeme s našimi zákazníky od počátečního návrhu až po finální realizaci, abychom zajistili, že jejich představy se promítnou do každého výrobku.
+
+<h3>Naše Hodnoty</h3>
+<ul>
+<li>Kvalita: Používáme pouze nejkvalitnější dřevo a materiály a dbáme na precizní provedení každého detailu.</li>
+<li>Individualita: Každý kus je jedinečný a přizpůsoben potřebám a vkusu každého zákazníka.</li>
+<li>Spolehlivost: Držíme se svých slov a dodržujeme stanovené termíny dodání.</li>
+<li>Zákaznický servis: Snažíme se vytvořit přátelské a osobní prostředí pro naše zákazníky, kde jejich potřeby jsou vždy na prvním místě.</li>
+<p>Pokud hledáte jedinečný kus dřevěného nábytku nebo dekorace, přijďte se podívat do naší dílny. Jsme tu, abychom vám pomohli přeměnit vaše představy na skutečnost.</p></p>
+      </ul>  </section>
     </main>
     <footer class="footer">
       <section class="section_contact">
@@ -36,24 +50,25 @@
         <a href="info@vejborny-truhlar.cz"><i class="fa-solid fa-envelope"></i>info@vejborny-truhlar.cz</a>
       
       </section>
-      <form class="footer_form">
+
+      <form class="footer_form" >
      
-        <h2>Poptávkový formulář</h2>
+        <h2>Dotazník</h2>
          <div class="form_inputs">
-        <label class="footer_form_label_name" >Jméno  
-          <input placeholder="Kamil" type="name">
-        </label>
-        <label class="footer_form_label_name">Příjmení
-          <input placeholder="Vejborný" type="text">
-        </label>
-        <label for="" class="footer_form_label_name">Email
-            <input placeholder="vejborny@seznam.cz" type="email" >
-        </label>
+          
+          <input placeholder="Jméno" type="name" name="name" required>
+      
+      
+          <input placeholder="Příjmení" type="text" name="surename" required>
+       
+        
+            <input placeholder="Email" type="email" name="email" required>
+        
       </div>
-        <label class="footer_form_label_name " >Vaše poptávka
-          <textarea class="text_field" cols="30" rows="10"></textarea>
-        </label>
-        <button class="button" type="submit">Odeslat</button>
+        
+          <textarea placeholder="Váš dotaz" name="message" class="text_field" cols="30" rows="10" required></textarea>
+        
+        <button class="button" type="submit" name="message">Odeslat</button>
       </form>
       
     </footer>
@@ -69,6 +84,32 @@
       
 
       </script>
-    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+
+ 
+
+
+
+document.querySelector('.footer_form').addEventListener('submit', function(event) {
+
+  event.preventDefault();
+
+
+  emailjs.sendForm('service_551e6cz', 'template_4t67c2g', this, {publicKey: "gUgZtTRsZ2gpcWrvr"}).then(
+    (response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      this.reset();
+    },
+    (error) => {
+      console.log('FAILED...', error);
+    }
+  );
+});
+
+
+</script>
   </body>
 </html>

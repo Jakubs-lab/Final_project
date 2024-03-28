@@ -2,7 +2,7 @@
 import { MeshReflectorMaterial,PresentationControls,Stage} from '@react-three/drei';
 import React from 'react';
 import Table_type_01 from './Table_type_01';
-//import Table_type_02 from './Table_type_02';
+import Table_type_02 from './Table_type_02';
 
 
 
@@ -17,7 +17,7 @@ const Experience = () =>{
         rotation={[Math.PI / 5, Math.PI / 9, 0]}
         >
     <Stage shadows>
-        <Table_type_01/>
+        <Table_type_02/>
     </Stage>
     <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position-y={-0.3} >
         <planeGeometry args={[100,100]} />
