@@ -3,7 +3,7 @@
 import React, { useRef } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 import { useCustomization } from '../context/Customization'
-import tableModel2 from '../assets/Models/Table'
+import tableModel2 from '../assets/Models/Table.gltf'
 import pineTextureBaseColor from '../Textures/Pine_wood/Wood_Plywood_Front_001_basecolor.jpg'
 import pineTexturNormalMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_normal.jpg'
 import pineTextureRoughnessMap from '../Textures/Pine_wood/Wood_Plywood_Front_001_roughness.jpg'
