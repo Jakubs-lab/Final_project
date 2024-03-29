@@ -444,10 +444,9 @@
 
 .button {
   margin: 0 auto;
-  color: #59111E;
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: 600;
-  width: 60%;
+  width: 50%;
   height: 3rem;
   background: #3498db;
   background-image: linear-gradient(to bottom, #7a9fbf, #2980b9);
